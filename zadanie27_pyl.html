@@ -1,0 +1,20 @@
+<!DOCTYPE html>   
+<head>     
+<meta charset="utf-8">   
+</head>  
+<body> 
+<div style="color:red;font-size:50px;"> 
+<script language="JavaScript"> 
+var dl=prompt("dl=",""); 
+var x=prompt("x=",""); 
+var dl_pyl=parseFloat(dl); 
+var x_pyl=parseFloat(x); 
+var wys_pyl= Math.sqrt(Math.pow(x_pyl, 2)- Math.pow(dl_pyl, 2));
+var alfa_pyl= Math.asin(wys_pyl/x_pyl)/Math.PI*180;
+
+document.write("wysokość="+wys_pyl.toFixed(2)+" m"+"<br>"); 
+document.write("alfa="+alfa_pyl.toFixed(2)+" st"+"<br>");
+</script> 
+</div> 
+</body> 
+</html> 

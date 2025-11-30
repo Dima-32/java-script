@@ -1,0 +1,41 @@
+  <html lang="pl-PL"> 
+         <body> 
+          <div style="color:green;font-size:36px;"> 
+            <script language="JavaScript"> 
+              var D1_pyl=prompt("Data1=",""); 
+              var D2_pyl=prompt("Data2=",""); 
+              var G1_pyl=prompt("Godzina1=",""); 
+              var G2_pyl=prompt("Godzina2=",""); 
+              var sekund; 
+              var a=parseFloat(D1_pyl); 
+              var b=parseFloat(D2_pyl); 
+	      var c=parseFloat(G1_pyl); 
+              var d=parseFloat(G2_pyl); 
+              if(a<=0 || a>31)
+		{
+		   document.write("Data1 nie może być mniejsza lub równa 0 oraz większa niż 31!");
+		} else if(b<=0 || b>31 || b>a) {
+		   document.write("Data2 nie może być mniejsza lub równa 0 oraz większa niż 31 lub Data1!");
+		} else if(c<=0 || c>24) {
+		   document.write("Godzina1 nie może być mniejsza lub równa 0 oraz większa niż 24!");
+		} else if(d<=0 || d>24) {
+		   document.write("Godzina2 nie może być mniejsza lub równa 0 oraz większa niż 24!");
+		} else {
+                if(c-d>=0)
+                {
+                sekund=((a-b)*24-(c-d))*60*60; 
+                } else if(d-c>=0)
+                {
+                sekund=((a-b)*24-(d-c))*60*60;
+                }
+              document.write("Ilość sekund między dniami "+a+" i "+b+" oraz ich godzinami "+c+" i "+d+" = "+sekund+"<br>"); 
+		}
+                function okno_zamknij_pyly() 
+                 { 
+                   window.close() 
+                 } 
+              </script> 
+            </div> 
+          <input type="button" value="zamknij okno" onclick="okno_zamknij_pyly()"/> 
+        </body> 
+       </html>

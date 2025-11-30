@@ -1,0 +1,27 @@
+<!DOCTYPE html>   
+<head>       
+<meta charset="utf-8">   
+</head>  
+<body> 
+<div style="color:blue;font-size:60px;"> 
+<script language="JavaScript">
+ 
+var N0=prompt("N0=",""); 
+var t=prompt("t=","");
+var T12=prompt("T1/2=","");
+  
+var N0_pyl=parseFloat(N0); 
+var t_pyl=parseFloat(t);
+var T12_pyl=parseFloat(T12); 
+<!-- Dmytro Pylypiuk -->
+var lambda_pyl= Math.log(2)/T12_pyl;
+var N_pyl=N0_pyl*Math.pow(Math.E, -lambda_pyl*t_pyl);
+document.write("N0="+N0_pyl+" [sztuk]"+"<br>"); 
+document.write("t="+t_pyl+" [lat]"+"<br>");
+document.write("T1/2="+T12_pyl+" [lat]"+"<br>"); 
+document.write("Lambda="+lambda_pyl.toFixed(7)+" [1/rok]"+"<br>");
+document.write("N="+N_pyl.toFixed(7)+" [sztuk]"+"<br>");
+</script> 
+</div> 
+</body> 
+</html> 
