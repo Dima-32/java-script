@@ -1,0 +1,27 @@
+<html> 
+     <head> 
+           <script type="text/javascript"> 
+              function pudelko(kolor_k,wysokosc_k,dlugosc_k)//początek konstruktora 
+  { 
+   this.kolor=kolor_k; 
+   this.wysokosc=wysokosc_k; 
+   this.dlugosc=dlugosc_k;   
+  }//koniec konstruktora 
+              pudelko.prototype.wypisz_pylypiuk = function () //definicja metody 
+      { 
+         alert(this.kolor + ' ' + this.wysokosc+ ' ' + this.dlugosc); 
+      }; 
+  var pudelko1 = new pudelko("Bialy", "10", "20"); // nowy obiekt pudelko1 
+  var pudelko2 = new pudelko('Czerwony', '20', '30'); 
+  pudelko1.wypisz_pylypiuk(); // uruchomienie metody wypisz_pylypiuk() dotyczącej pudelka 1 
+  pudelko2.wypisz_pylypiuk(); 
+                document.write("dostęp do właściwości"+"<br>"); 
+// poniżej dostęp do pól pudelko1 
+     document.write("pudelko pierwsze"+"   "+pudelko1.kolor+"   "+pudelko1.wysokosc+"   "+pudelko1.dlugosc); 
+            </script> 
+     </head> 
+<body> 
+ <br> 
+   programowanie obiektowe   
+</body> 
+</html> 

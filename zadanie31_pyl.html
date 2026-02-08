@@ -1,0 +1,31 @@
+<html> 
+     <head> 
+           <script type="text/javascript"> 
+       var pudelko = { 
+   kolor: 'bialy', 
+   wysokosc: '10 cm', 
+   dlugosc: '20 cm', 
+   pudelko_wyswietl_pylypiuk: function () 
+     { 
+      document.write(this.kolor + ' ' + this.wysokosc + ' ' + this.dlugosc) 
+     } 
+  } 
+  pudelko.pudelko_wyswietl_pylypiuk();
+  pudelko.cena=25; 
+  pudelko.wypisz_pylypiuk=function() {alert('Cena: ' + this.cena + 'zlotych')} 
+  pudelko.wypisz_pylypiuk(); 
+            </script> 
+     </head> 
+<body> 
+ <br> 
+Programowanie obiektowe. <br> 
+     Obiekt  to  pudelko<br> 
+     Pola:<br> 
+     kolor<br> 
+     wysokosc<br> 
+     dlugosc<br> 
+     metoda:  pudelko_wyswietl_pylypiuk<br> 
+     nowe pole to cena <br> 
+     nowa metoda to wypisz_pylypiuk();<br> 
+</body> 
+</html> 
